@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #DADADA;
-}
+  background-color: #2C3E50;}
 
 h1{
   font-family: "H1-Text";
@@ -88,6 +88,7 @@ header {
   flex-wrap: wrap;
   background-color: #2C3E50;
   padding: 20px 10px;
+  box-shadow: 0px 20px 20px -20px #1a2530;
 }
 
 ap-logo {
@@ -142,7 +143,58 @@ a.a1:hover{
     object-fit: cover;
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 90%;
+  margin: 20px;
+}
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 90%;
+  margin: 100px;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #1e2a38, #2c3e50);
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 220px;
+  height: auto;
+}
+
+.about-image img {
+  max-width: 260px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  /* Градієнтна маска для плавного зникання вниз */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 90%;
+  margin: auto;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #1e2a38, #2c3e50);
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+} */
 
 .contact {
   background-color: #212121;
